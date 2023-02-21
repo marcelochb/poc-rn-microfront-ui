@@ -4,7 +4,7 @@ import { ModelOfTextsTitle, ModelOfTextsBody, ModelOfTextsSubTitle, ModelOfTexts
 import { styles } from './styles';
 
 
-const Body: React.FC<PropsWithChildren<ModelOfTextsBody>> = ({ theme, isTextElement = false, style, children }) => {
+const Body: React.FC<ModelOfTextsBody> = ({ theme, isTextElement = false, style, children }) => {
   return (
     <Text style={[styles(theme, isTextElement).base, styles(theme).body, style]}>
       {children}

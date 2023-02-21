@@ -7,6 +7,7 @@ export type ModelOfTextsBody = {
   style?: StyleProp<TextStyle>;
   small?: boolean;
   isTextElement?: boolean;
+  children: React.ReactNode;
 }
 
 export type ModelOfTextsTitle = {
