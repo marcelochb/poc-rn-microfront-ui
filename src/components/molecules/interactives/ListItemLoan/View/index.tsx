@@ -19,7 +19,7 @@ export const ListItemLoan: React.FC<ModelOfListItemLoan> = ({
       <View style={styles(theme).viewData}>
         <Texts.Title theme={theme}>{type}</Texts.Title>
         <Texts.Body theme={theme} style={styles(theme).name}>{name}</Texts.Body>
-        <Texts.Body theme={theme}>{amount}</Texts.Body>
+        <Texts.Body theme={theme}>R$ {amount.toLocaleString("pt-BR")}</Texts.Body>
       </View>
       <View style={styles(theme).viewButton}>
         <IconArrowRight fill={theme.colors.text} />
