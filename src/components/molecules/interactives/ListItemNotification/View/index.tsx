@@ -23,11 +23,7 @@ export const ListItemNotification: React.FC<ModelOfListItemNotification> = ({
         <IconFootball fill={theme.colors.text} />
       </View>
       <View style={styles(theme).viewData}>
-        <View style={{
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-          alignItems: 'center'
-        }}>
+        <View style={styles(theme).title}>
           <Texts.Title theme={theme}>{nickName}</Texts.Title>
 
         </View>
@@ -72,5 +68,10 @@ const styles = (theme: ModelOfTheme) => StyleSheet.create({
     color: theme.colors.textHighlight,
     marginTop: theme.metrics.base,
     fontFamily: theme.fontFamily.italic,
+  },
+  title: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center'
   }
 })

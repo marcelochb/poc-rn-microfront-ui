@@ -1,10 +1,9 @@
 import React from 'react';
-import {SafeAreaView} from 'react-native-safe-area-context';
-import {View, StyleSheet, ActivityIndicator} from 'react-native';
+import {View, StyleSheet, ActivityIndicator, SafeAreaView} from 'react-native';
 import {ModelOfPageWapper} from '../Models';
 import {ModelOfTheme} from '@poc/theme';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
-import {StatusBarPageWrapper, StatusBarPage} from '../../../../atoms';
+import {StatusBarPageWrapper, StatusBarPage, Texts} from '../../../../atoms';
 
 export const PageWrapper: React.FC<ModelOfPageWapper> = ({
   children,
@@ -18,6 +17,8 @@ export const PageWrapper: React.FC<ModelOfPageWapper> = ({
   theme,
   actionSheet,
   hideButtonFixed = false,
+  error = false,
+  errorText = ''
 }) => {
   if (loading) {
     return (
@@ -26,9 +27,23 @@ export const PageWrapper: React.FC<ModelOfPageWapper> = ({
           theme={theme}
           isStatusBarLight={isStatusBarLight}
         />
-        <View style={[styles(theme).container, styles(theme).loading]}>
+        <View style={[styles(theme).container, styles(theme).centerChilds]}>
           <StatusBarPage theme={theme} isStatusBarLight={isStatusBarLight} />
           <ActivityIndicator />
+        </View>
+      </>
+    );
+  }
+  if (error) {
+    return (
+      <>
+        <StatusBarPageWrapper
+          theme={theme}
+          isStatusBarLight={isStatusBarLight}
+        />
+        <View style={[styles(theme).container, styles(theme).centerChilds]}>
+          <StatusBarPage theme={theme} isStatusBarLight={isStatusBarLight} />
+          <Texts.Body theme={theme}>{errorText}</Texts.Body>
         </View>
       </>
     );
@@ -110,6 +125,6 @@ const styles = (theme: ModelOfTheme) => {
       padding: metrics.base,
     },
     scrollView: {backgroundColor: colors.background, flex: 1},
-    loading: {justifyContent: 'center', alignItems: 'center'},
+    centerChilds: {justifyContent: 'center', alignItems: 'center'},
   });
 };

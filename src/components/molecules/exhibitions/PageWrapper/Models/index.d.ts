@@ -9,6 +9,8 @@ export type ModelOfPageWapper = {
   isHeaderRadius?: boolean;
   ButtonFixed?: ReactNode;
   loading?: boolean;
+  error?: boolean;
+  errorText?: string;
   noHorizontalPadding?: boolean;
   theme: ModelOfTheme;
   children: ReactNode;

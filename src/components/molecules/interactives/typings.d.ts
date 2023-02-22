@@ -6,3 +6,4 @@ export * from './ListItemTeam/Models';
 export * from './ListItemMatch/Models';
 export * from './ActionSheetWrapper/Models';
 export * from './SelectButton/Models';
+export * from './ListItemLoan/Models';
