@@ -3,10 +3,10 @@ import { Component } from "react";
 
 export type ModelOfListItemLoan = {
   theme: ModelOfTheme,
-  onPressed: (() => void) | undefined,
-  name: string | undefined;
-  type: string | undefined;
-  amount: number | undefined;
+  onPressed: (() => void),
+  name: string;
+  type: string;
+  amount: number;
 }
 
 export class ListItemLoan extends Component<ModelOfListItemLoan> {}

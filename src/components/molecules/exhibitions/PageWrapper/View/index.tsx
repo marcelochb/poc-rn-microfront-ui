@@ -18,7 +18,7 @@ export const PageWrapper: React.FC<ModelOfPageWapper> = ({
   actionSheet,
   hideButtonFixed = false,
   error = false,
-  errorText = ''
+  errorText = 'Tivemos um problema de comunicação'
 }) => {
   if (loading) {
     return (
