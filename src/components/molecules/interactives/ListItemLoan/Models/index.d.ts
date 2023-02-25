@@ -6,7 +6,7 @@ export type ModelOfListItemLoan = {
   onPressed: (() => void),
   name: string;
   type: string;
-  amount: number;
+  amount: string;
 }
 
 export class ListItemLoan extends Component<ModelOfListItemLoan> {}
