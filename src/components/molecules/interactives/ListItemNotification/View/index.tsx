@@ -1,14 +1,14 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import { ModelOfListItemNotification } from '../Models';
+import { IListItemNotification } from '../Models';
 import IconFootball from '@src/assetsui/Icons/iconFootball.svg';
 import IconArrowRight from '@src/assetsui/Icons/iconArrowRight.svg';
 import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 import { Texts } from '../../../../atoms';
-import { ModelOfTheme } from '@poc/theme';
+import { ITheme } from '@poc/interfaces';
 
 
-export const ListItemNotification: React.FC<ModelOfListItemNotification> = ({
+export const ListItemNotification: React.FC<IListItemNotification> = ({
   theme,
   onPressed,
   name,
@@ -39,7 +39,7 @@ export const ListItemNotification: React.FC<ModelOfListItemNotification> = ({
   );
 }
 
-const styles = (theme: ModelOfTheme) => StyleSheet.create({
+const styles = (theme: ITheme) => StyleSheet.create({
   container: {
     flexDirection: 'row',
     borderBottomColor: theme.colors.textSecundary,

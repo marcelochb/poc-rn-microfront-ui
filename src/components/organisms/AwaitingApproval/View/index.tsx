@@ -2,10 +2,10 @@ import React from 'react';
 import { View } from 'react-native';
 import { Texts } from '../../../atoms/exhibitions';
 import { Buttons, PageWrapper } from '../../../molecules';
-import { ModelOfAwaitingApproval } from '../Models';
+import { IAwaitingApproval } from '../Models';
 
 
-export const AwaitingApproval: React.FC<ModelOfAwaitingApproval> = ({
+export const AwaitingApproval: React.FC<IAwaitingApproval> = ({
   theme,
   title,
   bodyText,

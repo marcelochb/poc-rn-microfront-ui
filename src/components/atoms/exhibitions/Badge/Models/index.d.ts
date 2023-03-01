@@ -1,9 +1,9 @@
-import { ModelOfTheme } from "@poc/theme";
+import { ITheme } from "@poc/theme";
 import { Component } from "react";
 
-export type ModelOfBadge = {
+export type IBadge = {
   value?: number;
-  theme: ModelOfTheme;
+  theme: ITheme;
 }
 
-export class Badge extends Component<ModelOfBadge> {}
+export class Badge extends Component<IBadge> {}

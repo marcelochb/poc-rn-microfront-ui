@@ -1,9 +1,9 @@
 import { Component } from "react";
 import { TextInputProps } from "react-native";
-import { ModelOfTheme } from "@poc/theme";
+import { ITheme } from "@poc/theme";
 
-export type ModelOfInput = TextInputProps & {
-  theme: ModelOfTheme;
+export type IInput = TextInputProps & {
+  theme: ITheme;
   label: string,
   IconSVG?: React.FC<React.SVGProps<SVGSVGElement>>,
   isSecurityTextEntry?: boolean,
@@ -11,17 +11,17 @@ export type ModelOfInput = TextInputProps & {
   startAnimate?: boolean,
 }
 
-export type ModelOfInputMoveLabel = {
+export type IInputMoveLabel = {
   x: number,
   y: number
 }
 
-export type ModelOfInputController = {
+export type IInputController = {
   isSecurityTextEntry: boolean,
 }
 
-export type ModelOfInputStyleService = {
+export type IInputStyleService = {
   error: string | boolean,
 }
 
-export class Input extends Component<ModelOfInput> {}
+export class Input extends Component<IInput> {}

@@ -1,16 +1,16 @@
 import React from 'react';
 import { Image, StyleSheet } from 'react-native';
-import { ModelOfTheme } from '@poc/theme';
-import { ModelOfLogoHeader } from '../Models';
+import { ITheme } from '@poc/interfaces';
+import { ILogoHeader } from '../Models';
 
 
-export const LogoHeader: React.FC<ModelOfLogoHeader> = ({theme,source}) => {
+export const LogoHeader: React.FC<ILogoHeader> = ({theme,source}) => {
   return (
     <Image source={source} style={styles(theme).imageLogo} />
   );
 }
 
-const styles = (theme:ModelOfTheme) => StyleSheet.create({
+const styles = (theme:ITheme) => StyleSheet.create({
   imageLogo: {
     width: 35,
     height: 35,

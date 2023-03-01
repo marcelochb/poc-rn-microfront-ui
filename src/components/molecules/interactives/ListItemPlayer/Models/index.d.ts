@@ -1,12 +1,12 @@
-import { ModelOfTheme } from "@poc/theme";
+import { ITheme } from "@poc/theme";
 import { Component } from "react";
 
-export type ModelOfListItemPlayer = {
+export type IListItemPlayer = {
   avatarSource: string | undefined;
   nickname: string | undefined;
   name: string | undefined;
   navigateTo: (() => void) | undefined;
-  theme: ModelOfTheme;
+  theme: ITheme;
 }
 
-export class ListItemPlayer extends Component<ModelOfListItemPlayer> {}
+export class ListItemPlayer extends Component<IListItemPlayer> {}

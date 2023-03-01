@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, TouchableWithoutFeedback } from 'react-native';
-import { ModelOfListItemPlayer } from '../Models';
+import { IListItemPlayer } from '../Models';
 import { Avatar, Texts } from '../../../../atoms';
 import { styles } from './styles';
 
-export const ListItemPlayer: React.FC<ModelOfListItemPlayer> = ({
+export const ListItemPlayer: React.FC<IListItemPlayer> = ({
   name,
   nickname,
   navigateTo,

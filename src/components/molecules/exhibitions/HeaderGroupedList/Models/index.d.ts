@@ -1,9 +1,9 @@
-import { ModelOfTheme } from "@poc/theme";
+import { ITheme } from "@poc/theme";
 import { Component } from "react";
 
-export type ModelOfHeaderGroupedList = {
-  themme: ModelOfTheme;
+export type IHeaderGroupedList = {
+  themme: ITheme;
   yearMonth: string | undefined;
 }
 
-export class HeaderGroupedList extends Component<ModelOfHeaderGroupedList> {}
+export class HeaderGroupedList extends Component<IHeaderGroupedList> {}

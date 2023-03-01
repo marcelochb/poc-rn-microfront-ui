@@ -1,9 +1,9 @@
-import { ModelOfTheme } from "@poc/theme";
+import { ITheme } from "@poc/theme";
 import { Component } from "react";
 
-export type ModelOfNotificationIcon = {
-  theme: ModelOfTheme;
+export type INotificationIcon = {
+  theme: ITheme;
   type: 'Sucesso' | 'Atenção' | 'Erro';
 }
 
-export class NotificationIcon extends Component<ModelOfNotificationIcon> {}
+export class NotificationIcon extends Component<INotificationIcon> {}

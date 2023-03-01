@@ -1,7 +1,7 @@
-import { ModelOfTheme } from "@poc/theme";
+import { ITheme } from "@poc/theme";
 import { StyleSheet } from "react-native";
 
-export const styles = (theme: ModelOfTheme) => StyleSheet.create({
+export const styles = (theme: ITheme) => StyleSheet.create({
   container: {
     backgroundColor: theme.colors.background,
     paddingVertical: theme.metrics.base,

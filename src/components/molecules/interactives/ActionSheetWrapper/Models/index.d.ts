@@ -1,9 +1,9 @@
-import { ModelOfTheme } from "@poc/theme";
+import { ITheme } from "@poc/theme";
 import React, { Component } from "react";
 
-export interface ModelOfActionSheetWrapper {
-  theme: ModelOfTheme;
+export interface IActionSheetWrapper {
+  theme: ITheme;
   children: React.ReactNode;
 }
 
-export class ActionSheetWrapper extends Component<ModelOfActionSheetWrapper> {}
+export class ActionSheetWrapper extends Component<IActionSheetWrapper> {}

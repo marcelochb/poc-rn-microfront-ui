@@ -1,10 +1,10 @@
 import React, { PropsWithChildren } from 'react';
 import { Text, ActivityIndicator } from 'react-native';
-import { ModelOfTextsTitle, ModelOfTextsBody, ModelOfTextsSubTitle, ModelOfTextsError, ModelOfTextsButton, ModelOfTextsLink } from '../Models';
+import { ITextsTitle, ITextsBody, ITextsSubTitle, ITextsError, ITextsButton, ITextsLink } from '../Models';
 import { styles } from './styles';
 
 
-const Body: React.FC<ModelOfTextsBody> = ({ theme, isTextElement = false, style, children }) => {
+const Body: React.FC<ITextsBody> = ({ theme, isTextElement = false, style, children }) => {
   return (
     <Text style={[styles(theme, isTextElement).base, styles(theme).body, style]}>
       {children}
@@ -12,7 +12,7 @@ const Body: React.FC<ModelOfTextsBody> = ({ theme, isTextElement = false, style,
   )
 }
 
-const Title: React.FC<PropsWithChildren<ModelOfTextsTitle>> = ({
+const Title: React.FC<PropsWithChildren<ITextsTitle>> = ({
   children,
   style,
   small = false,
@@ -27,7 +27,7 @@ const Title: React.FC<PropsWithChildren<ModelOfTextsTitle>> = ({
     </Text>);
 }
 
-const SubTitle: React.FC<ModelOfTextsSubTitle> = ({ theme, isTextElement = false, style, children }) => {
+const SubTitle: React.FC<ITextsSubTitle> = ({ theme, isTextElement = false, style, children }) => {
   return (
     <Text style={[styles(theme, isTextElement).base, styles(theme).subTitle, style]}>
       {children}
@@ -35,13 +35,13 @@ const SubTitle: React.FC<ModelOfTextsSubTitle> = ({ theme, isTextElement = false
   )
 }
 
-const Error: React.FC<ModelOfTextsError> = ({ theme, style, children }) => {
+const Error: React.FC<ITextsError> = ({ theme, style, children }) => {
   return (
     <Text style={[styles(theme).base, styles(theme).error, style]}>{children}</Text>
   );
 }
 
-const Button: React.FC<ModelOfTextsButton> = ({ isLoading, children, isOutline, theme, style }) => {
+const Button: React.FC<ITextsButton> = ({ isLoading, children, isOutline, theme, style }) => {
   return (
     isLoading
       ? (
@@ -61,7 +61,7 @@ const Button: React.FC<ModelOfTextsButton> = ({ isLoading, children, isOutline, 
   );
 }
 
-const Link: React.FC<ModelOfTextsLink> = ({ theme, style, children }) => {
+const Link: React.FC<ITextsLink> = ({ theme, style, children }) => {
   return (
     <Text style={[
       styles(theme).base,

@@ -1,15 +1,15 @@
-import { ModelOfTheme } from "@poc/theme";
+import { ITheme } from "@poc/theme";
 import { Component } from "react";
 import { DefaultSectionT, SectionListData, SectionListRenderItem, StyleProp, ViewStyle } from "react-native";
 
-export type ModelOfListGrouped<ItemT = any,SectionT = DefaultSectionT> = {
+export type IListGrouped<ItemT = any,SectionT = DefaultSectionT> = {
   horizontal?: boolean;
   data: Array<SectionListData<ItemT, SectionT>>;
   item: SectionListRenderItem<ItemT, SectionT> | undefined;
   header: ((info: { section: SectionListData<ItemT, SectionT> }) => React.ReactElement | null) | undefined;
   style?: StyleProp<ViewStyle>;
-  theme: ModelOfTheme;
+  theme: ITheme;
   emptyList: React.ComponentType<any> | React.ReactElement<any, string | React.JSXElementConstructor<any>> | null | undefined;
 }
 
-export class ListGrouped<ItemT = any,SectionT = DefaultSectionT> extends Component<ModelOfListGrouped<ItemT,SectionT>> {}
+export class ListGrouped<ItemT = any,SectionT = DefaultSectionT> extends Component<IListGrouped<ItemT,SectionT>> {}

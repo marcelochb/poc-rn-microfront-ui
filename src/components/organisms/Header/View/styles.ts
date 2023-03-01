@@ -1,7 +1,7 @@
-import { ModelOfTheme } from "@poc/theme";
+import { ITheme } from "@poc/theme";
 import { StyleSheet } from "react-native";
 
-export const styles = (theme: ModelOfTheme) => StyleSheet.create({
+export const styles = (theme: ITheme) => StyleSheet.create({
   header: { flexDirection: 'row', justifyContent: 'space-between' },
   title: { color: theme.colors.textElements, fontSize: theme.fontSize.extraLagest },
   type: { marginRight: theme.metrics.base },

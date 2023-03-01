@@ -5,10 +5,10 @@ import {
   ViewStyle,
   TextStyle,
 } from 'react-native';
-import { ModelOfTheme } from '@poc/theme';
+import { ITheme } from '@poc/interfaces';
 
-export type ModelOfButtonBase = {
-  theme: ModelOfTheme;
+export type IButtonBase = {
+  theme: ITheme;
   label: string;
   testID?: string;
   onPress: ((event: GestureResponderEvent) => void) | undefined;
@@ -18,15 +18,15 @@ export type ModelOfButtonBase = {
   style?: StyleProp<ViewStyle>;
 };
 
-export type ModelOfButtonFixed = {
-  theme: ModelOfTheme;
+export type IButtonFixed = {
+  theme: ITheme;
   IconSVG: React.FC<React.SVGProps<SVGSVGElement>>;
   style?: StyleProp<ViewStyle>;
   onPress: ((event: GestureResponderEvent) => void) | undefined;
 };
 
-export type ModelOfButtonLink = {
-  theme: ModelOfTheme;
+export type IButtonLink = {
+  theme: ITheme;
   label?: string;
   styleLabel?: StyleProp<TextStyle>;
   styleContent?: StyleProp<TextStyle>;
@@ -36,6 +36,6 @@ export type ModelOfButtonLink = {
   IconColor?: string;
 };
 
-export class Base extends Component<ModelOfButtonBase> {}
-export class Fixed extends Component<ModelOfButtonFixed> {}
-export class Link extends Component<ModelOfButtonLink> {}
+export class Base extends Component<IButtonBase> {}
+export class Fixed extends Component<IButtonFixed> {}
+export class Link extends Component<IButtonLink> {}

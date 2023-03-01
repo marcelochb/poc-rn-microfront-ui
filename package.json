@@ -12,7 +12,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@poc/theme": "*",
+    "@poc/interfaces": "*",
     "react": "18.2.0",
     "react-native": "0.71.2",
     "react-native-gesture-handler": "^2.9.0",

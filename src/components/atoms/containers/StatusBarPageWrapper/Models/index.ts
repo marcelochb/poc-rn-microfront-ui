@@ -1,9 +1,9 @@
 import { Component } from 'react';
-import { ModelOfTheme } from '@poc/theme';
+import { ITheme } from '@poc/interfaces';
 
-export type ModelOfStatusBarPageWrapper = {
-  theme: ModelOfTheme;
+export type IStatusBarPageWrapper = {
+  theme: ITheme;
   isStatusBarLight?: boolean;
 };
 
-export class StatusBarPageWrapper extends Component<ModelOfStatusBarPageWrapper> {}
+export class StatusBarPageWrapper extends Component<IStatusBarPageWrapper> {}

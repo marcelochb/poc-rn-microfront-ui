@@ -1,15 +1,15 @@
 import React from 'react';
 import { View, TextInput, Animated, Text, StyleSheet } from 'react-native';
-import { ModelOfInput } from '../Models';
+import { IInput } from '../Models';
 import { useInputController } from '../Controller';
 
 import IconPasswordOff from '@src/assetsui/Icons/iconPasswordOff.svg';
 import IconPasswordOn from '@src/assetsui/Icons/iconPasswordOn.svg';
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import { ModelOfTheme } from '@poc/theme';
+import { ITheme } from '@poc/interfaces';
 import { Texts } from '../../../exhibitions';
 
-export const Input: React.FC<ModelOfInput> = ({
+export const Input: React.FC<IInput> = ({
   theme,
   label,
   IconSVG,
@@ -50,7 +50,7 @@ export const Input: React.FC<ModelOfInput> = ({
     </View>
   );
 }
-const styles = (theme: ModelOfTheme) => {
+const styles = (theme: ITheme) => {
   const { colors, metrics, fontFamily, fontSize } = theme;
   return StyleSheet.create({
     container: {

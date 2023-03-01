@@ -1,9 +1,9 @@
 import React from 'react';
 import { EmptyWrapper } from '../../../molecules';
-import { ModelOfEmptyMatchList } from '../Models';
+import { IEmptyMatchList } from '../Models';
 import IconSoccerField from '../../../../assets/Icons/iconSoccerField.svg';
 
-export const EmptyMatchList: React.FC<ModelOfEmptyMatchList> = ({
+export const EmptyMatchList: React.FC<IEmptyMatchList> = ({
   theme
 }) => {
   return (

@@ -1,8 +1,8 @@
 import React from 'react';
 import { StatusBar } from 'react-native';
-import { ModelOfStatusBarPage } from '../Models';
+import { IStatusBarPage } from '../Models';
 
-export const StatusBarPage: React.FC<ModelOfStatusBarPage> = ({
+export const StatusBarPage: React.FC<IStatusBarPage> = ({
   theme,
   isStatusBarLight = false,
 }) => {

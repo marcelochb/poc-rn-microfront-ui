@@ -1,9 +1,9 @@
 import React from 'react';
 import { TouchableWithoutFeedback, View } from 'react-native';
 import { Avatar, Texts } from '../../../../atoms';
-import { ModelOfListItemMatch } from '../Models';
+import { IListItemMatch } from '../Models';
 import { styles } from './styles';
-export const ListItemMatch: React.FC<ModelOfListItemMatch> = ({
+export const ListItemMatch: React.FC<IListItemMatch> = ({
   theme,
   teamCrest,
   teamName,

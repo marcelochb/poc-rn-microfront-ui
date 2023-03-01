@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
-import { ModelOfTheme } from '@poc/theme';
+import { ITheme } from '@poc/interfaces';
 
-export const styles = (theme: ModelOfTheme, isTextElement: boolean = false) => {
+export const styles = (theme: ITheme, isTextElement: boolean = false) => {
   const { fontFamily, fontSize, colors } = theme;
   return StyleSheet.create({
     base: {

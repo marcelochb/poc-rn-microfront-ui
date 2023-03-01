@@ -1,10 +1,10 @@
 import { useInputAnimateService } from "../Services/animate";
 import { useState } from "react";
-import { ModelOfInputController } from "../Models";
+import { IInputController } from "../Models";
 
 export const useInputController = ({
   isSecurityTextEntry,
-}:ModelOfInputController) => {
+}:IInputController) => {
   const {animateLabel,moveLabelUp,moveLabelDown} = useInputAnimateService();
   const [isPasswordVisible, setIsPasswordVisible] = useState(isSecurityTextEntry);
 

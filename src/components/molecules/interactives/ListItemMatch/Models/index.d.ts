@@ -1,9 +1,9 @@
-import { ModelOfTheme } from "@poc/theme";
+import { ITheme } from "@poc/theme";
 import { Component } from "react";
 import { ImageSourcePropType } from "react-native";
 
-export type ModelOfListItemMatch = {
-  theme: ModelOfTheme;
+export type IListItemMatch = {
+  theme: ITheme;
   teamCrest?: ImageSourcePropType | undefined;
   teamName:  string;
   monthDay: string;
@@ -14,4 +14,4 @@ export type ModelOfListItemMatch = {
   onPressed: (() => void) | undefined;
 }
 
-export class ListItemMatch extends Component<ModelOfListItemMatch> {}
+export class ListItemMatch extends Component<IListItemMatch> {}

@@ -1,10 +1,10 @@
 import { Component, ReactNode } from "react";
-import { ModelOfTheme } from "@poc/theme";
+import { ITheme } from "@poc/theme";
 
-export type  ModelOfPopupNotificationType = 'Sucesso' | 'Atenção' | 'Erro'
+export type  IPopupNotificationType = 'Sucesso' | 'Atenção' | 'Erro'
 
-export type ModelOfPopupConfirmation = {
-  theme: ModelOfTheme;
+export type IPopupConfirmation = {
+  theme: ITheme;
   loading: boolean;
   visible: boolean;
   handleButtonPositiveAnswer:  | ((() => void) & (() => void))
@@ -15,16 +15,16 @@ export type ModelOfPopupConfirmation = {
   question: string;
 }
 
-export type ModelOfPopupNotification = {
-  theme: ModelOfTheme;
+export type IPopupNotification = {
+  theme: ITheme;
   visible: boolean;
-  type: ModelOfPopupNotificationType;
+  type: IPopupNotificationType;
   text: string;
   onHandler: () => void;
 }
 
-export type ModelOfPopupOption ={
-  theme: ModelOfTheme;
+export type IPopupOption ={
+  theme: ITheme;
   visible: boolean,
   onHandler: () => void;
   firstButton: ReactNode;
@@ -32,6 +32,6 @@ export type ModelOfPopupOption ={
   tertiaryButton?: ReactNode;
 }
 
-export class Confirmation extends Component<ModelOfPopupConfirmation> {}
-export class Notification extends Component<ModelOfPopupNotification> {}
-export class Options extends Component<ModelOfPopupOption> {}
+export class Confirmation extends Component<IPopupConfirmation> {}
+export class Notification extends Component<IPopupNotification> {}
+export class Options extends Component<IPopupOption> {}

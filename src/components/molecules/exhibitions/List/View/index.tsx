@@ -1,10 +1,10 @@
-import { ModelOfTheme } from '@poc/theme';
+import { ITheme } from '@poc/interfaces';
 import React from 'react';
 import { View, FlatList, StyleSheet } from 'react-native';
-import { ModelOfList } from '../Models';
+import { IList } from '../Models';
 
 
-export const List: React.FC<ModelOfList> = ({
+export const List: React.FC<IList> = ({
   data,
   horizontal = false,
   item,
@@ -26,6 +26,6 @@ export const List: React.FC<ModelOfList> = ({
   );
 }
 
-const styles = (theme: ModelOfTheme) => StyleSheet.create({
+const styles = (theme: ITheme) => StyleSheet.create({
   container: { padding: theme.metrics.base }
 })

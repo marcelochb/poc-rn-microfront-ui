@@ -1,10 +1,10 @@
 import { Component } from "react";
-import { ModelOfTheme } from "@poc/theme";
+import { ITheme } from "@poc/theme";
 
-export type ModelOfSignUpPopup = {
+export type ISignUpPopup = {
   visible: boolean;
   onDismiss: () => void;
-  theme: ModelOfTheme;
+  theme: ITheme;
   firstButtonLabel: string;
   firstButtonIcon?: React.FC<React.SVGProps<SVGSVGElement>> | undefined
   firstButtonOnPress: ((() => void) & (() => void))
@@ -16,4 +16,4 @@ export type ModelOfSignUpPopup = {
   tertiaryButtonOnPress: ((() => void) & (() => void))
 }
 
-export class SignUpPopup extends Component<ModelOfSignUpPopup> {}
+export class SignUpPopup extends Component<ISignUpPopup> {}

@@ -1,5 +1,5 @@
 import { Animated, Easing, TextInputFocusEventData, Platform } from "react-native";
-import { ModelOfInputMoveLabel } from "../Models";
+import { IInputMoveLabel } from "../Models";
 import { useState } from "react";
 
 export const useInputAnimateService = () => {
@@ -8,7 +8,7 @@ export const useInputAnimateService = () => {
   : 20})
   const animateLabel = new Animated.ValueXY(valueXY);
 
-  const moveLabel = (toValue:ModelOfInputMoveLabel) => {
+  const moveLabel = (toValue:IInputMoveLabel) => {
     Animated.timing(animateLabel,
       {
         toValue,

@@ -1,9 +1,9 @@
-import { ModelOfTheme } from "@poc/theme";
+import { ITheme } from "@poc/theme";
 import { Component } from "react";
 import { StyleProp, ViewStyle } from "react-native";
 
-export type ModelOfListItemTeam = {
-  theme: ModelOfTheme;
+export type IListItemTeam = {
+  theme: ITheme;
   avatarSource: string | undefined;
   name: string | undefined;
   labelEdit: string | undefined;
@@ -15,4 +15,4 @@ export type ModelOfListItemTeam = {
   style?: StyleProp<ViewStyle>;
 }
 
-export class ListItemTeam extends Component<ModelOfListItemTeam> {}
+export class ListItemTeam extends Component<IListItemTeam> {}

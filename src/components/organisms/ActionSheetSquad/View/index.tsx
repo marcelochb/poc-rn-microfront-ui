@@ -2,10 +2,10 @@ import React, { useImperativeHandle, useState } from "react";
 import { View } from "react-native";
 import { Texts } from "../../../atoms";
 import { ActionSheetWrapper, Buttons, SelectButton } from "../../../molecules";
-import { ModelOfActionSheetSquad } from "../Models";
+import { IActionSheetSquad } from "../Models";
 import { styles } from "./styles";
 
-export const ActionSheetSquad = React.forwardRef<any,ModelOfActionSheetSquad>(({
+export const ActionSheetSquad = React.forwardRef<any,IActionSheetSquad>(({
   theme,
 onPress
 },ref) => {

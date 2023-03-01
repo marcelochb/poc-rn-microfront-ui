@@ -1,10 +1,10 @@
 import React from 'react';
 import { Dimensions, View } from 'react-native';
 import { Texts } from '../../../../atoms';
-import { ModelOfEmptyWrapper } from '../Models';
+import { IEmptyWrapper } from '../Models';
 
 import { styles } from './styles';
-export const EmptyWrapper: React.FC<ModelOfEmptyWrapper> = ({
+export const EmptyWrapper: React.FC<IEmptyWrapper> = ({
   theme,
   IconSVG,
   title,

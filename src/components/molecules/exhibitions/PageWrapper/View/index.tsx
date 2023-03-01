@@ -1,11 +1,11 @@
 import React from 'react';
 import {View, StyleSheet, ActivityIndicator, SafeAreaView} from 'react-native';
-import {ModelOfPageWapper} from '../Models';
-import {ModelOfTheme} from '@poc/theme';
+import {IPageWapper} from '../Models';
+import {ITheme} from '@poc/interfaces';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 import {StatusBarPageWrapper, StatusBarPage, Texts} from '../../../../atoms';
 
-export const PageWrapper: React.FC<ModelOfPageWapper> = ({
+export const PageWrapper: React.FC<IPageWapper> = ({
   children,
   isStatusBarLight = false,
   isScrollForm = false,
@@ -105,7 +105,7 @@ export const PageWrapper: React.FC<ModelOfPageWapper> = ({
   );
 };
 
-const styles = (theme: ModelOfTheme) => {
+const styles = (theme: ITheme) => {
   const {colors, metrics} = theme;
   return StyleSheet.create({
     container: {

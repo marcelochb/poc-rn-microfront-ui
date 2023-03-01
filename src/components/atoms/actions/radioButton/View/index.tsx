@@ -1,13 +1,13 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
-import { ModelOfRadioButton } from '../Models';
+import { IRadioButton } from '../Models';
 import IconRadioButtonChecked from '@src/assetsui/Icons/iconRadioButtonChecked.svg';
 import IconRadioButtonUnchecked from '@src/assetsui/Icons/iconRadioButtonUnchecked.svg';
-import { ModelOfTheme } from '@poc/theme';
+import { ITheme } from '@poc/interfaces';
 import { Texts } from '../../../exhibitions';
 
-export const RadioButton: React.FC<ModelOfRadioButton> = (
+export const RadioButton: React.FC<IRadioButton> = (
   {
     label,
     isChecked,
@@ -29,7 +29,7 @@ export const RadioButton: React.FC<ModelOfRadioButton> = (
     </WrapperView>
   );
 }
-const styles = (theme: ModelOfTheme) => StyleSheet.create({
+const styles = (theme: ITheme) => StyleSheet.create({
   container: {
     flexDirection: 'row',
     alignItems: 'center',

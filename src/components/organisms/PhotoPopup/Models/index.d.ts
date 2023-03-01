@@ -1,18 +1,18 @@
-import { ModelOfTheme } from "@poc/theme";
+import { ITheme } from "@poc/theme";
 import { Component } from "react";
 import { ImageOrVideo } from "react-native-image-crop-picker";
 
 
-export type ModelOfPhotoPopupController = {
+export type IPhotoPopupController = {
   getImage: (image: ImageOrVideo) => void;
 };
 
-export type ModelOfPhotoPopup = {
+export type IPhotoPopup = {
   visible: boolean;
   onDismiss: () => void;
   onSelectFromGalery: () => void;
   onTakePhoto: () => void;
-  theme: ModelOfTheme;
+  theme: ITheme;
 };
 
-export class PhotoPopup extends Component<ModelOfPhotoPopup> {}
+export class PhotoPopup extends Component<IPhotoPopup> {}

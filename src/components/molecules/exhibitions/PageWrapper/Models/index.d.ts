@@ -1,8 +1,8 @@
 import {Component} from 'react';
 import {ReactNode} from 'react';
-import {ModelOfTheme} from '@poc/theme';
+import {ITheme} from '@poc/interfaces';
 
-export type ModelOfPageWapper = {
+export type IPageWapper = {
   isStatusBarLight?: boolean;
   isScrollForm?: boolean;
   Header?: ReactNode;
@@ -12,10 +12,10 @@ export type ModelOfPageWapper = {
   error?: boolean;
   errorText?: string;
   noHorizontalPadding?: boolean;
-  theme: ModelOfTheme;
+  theme: ITheme;
   children: ReactNode;
   actionSheet?: ReactNode;
   hideButtonFixed?: boolean;
 };
 
-export class PageWrapper extends Component<ModelOfPageWapper> {}
+export class PageWrapper extends Component<IPageWapper> {}

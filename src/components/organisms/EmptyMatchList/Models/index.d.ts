@@ -1,8 +1,8 @@
-import { ModelOfTheme } from "@poc/theme"
+import { ITheme } from "@poc/theme"
 import { Component } from "react";
 
-export type ModelOfEmptyMatchList = {
-  theme: ModelOfTheme;
+export type IEmptyMatchList = {
+  theme: ITheme;
 }
 
-export class EmptyMatchList extends Component<ModelOfEmptyMatchList> {}
+export class EmptyMatchList extends Component<IEmptyMatchList> {}

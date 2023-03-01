@@ -1,11 +1,11 @@
-import { ModelOfTheme } from "@poc/theme"
+import { ITheme } from "@poc/theme"
 import { Component } from "react";
 
-export type ModelOfSelectButton = {
-  theme: ModelOfTheme;
+export type ISelectButton = {
+  theme: ITheme;
   onClick: () => void;
   label: String;
   checked: boolean;
 }
 
-export class SelectButton extends Component<ModelOfSelectButton> {}
+export class SelectButton extends Component<ISelectButton> {}

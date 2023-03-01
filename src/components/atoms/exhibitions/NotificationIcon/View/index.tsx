@@ -1,13 +1,13 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import { ModelOfNotificationIcon } from '../Models';
+import { INotificationIcon } from '../Models';
 
 import IconCheckCicle from '@src/assetsui/Icons/iconCheckCircle.svg';
 import IconWarning from '@src/assetsui/Icons/iconWarning.svg';
 import IconDangerous from '@src/assetsui/Icons/iconDangerous.svg';
-import { ModelOfTheme } from '@poc/theme';
+import { ITheme } from '@poc/interfaces';
 
-export const NotificationIcon: React.FC<ModelOfNotificationIcon> = ({ type, theme }) => {
+export const NotificationIcon: React.FC<INotificationIcon> = ({ type, theme }) => {
   if (type === 'Sucesso') return (
     <View style={[styles(theme).container, styles(theme).succes]}>
       <IconCheckCicle fill={theme.colors.success} />
@@ -26,7 +26,7 @@ export const NotificationIcon: React.FC<ModelOfNotificationIcon> = ({ type, them
   else return null
 }
 
-const styles = (theme: ModelOfTheme) => {
+const styles = (theme: ITheme) => {
   const { colors, metrics } = theme;
   return StyleSheet.create({
     container: {

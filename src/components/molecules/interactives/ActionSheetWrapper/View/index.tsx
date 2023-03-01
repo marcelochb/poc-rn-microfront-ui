@@ -8,13 +8,13 @@ import {
   Platform
 } from 'react-native';
 import { useActionSheetController } from '../Controller';
-import { ModelOfActionSheetWrapper } from '../Models';
+import { IActionSheetWrapper } from '../Models';
 import {styles} from './styles';
 
 const AnimatedView = Animated.createAnimatedComponent(View);
 
 
-export const ActionSheetWrapper = React.forwardRef<any,ModelOfActionSheetWrapper>(({
+export const ActionSheetWrapper = React.forwardRef<any,IActionSheetWrapper>(({
   theme,
   children,
 },ref) => {

@@ -1,10 +1,10 @@
-import { ModelOfTheme } from "@poc/theme";
+import { ITheme } from "@poc/theme";
 import { Component } from "react";
 import { ImageSourcePropType } from "react-native";
 
-export type ModelOfLogoHeader = {
-  theme: ModelOfTheme;
+export type ILogoHeader = {
+  theme: ITheme;
   source: ImageSourcePropType;
 }
 
-export class LogoHeader extends Component<ModelOfLogoHeader> {}
+export class LogoHeader extends Component<ILogoHeader> {}

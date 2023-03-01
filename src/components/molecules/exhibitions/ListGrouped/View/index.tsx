@@ -1,11 +1,11 @@
-import { ModelOfTheme } from '@poc/theme';
+import { ITheme } from '@poc/interfaces';
 import React from 'react';
 import { View, StyleSheet, SectionList } from 'react-native';
 import { Texts } from '../../../../atoms';
-import { ModelOfListGrouped } from '../Models';
+import { IListGrouped } from '../Models';
 
 
-export const ListGrouped: React.FC<ModelOfListGrouped> = ({
+export const ListGrouped: React.FC<IListGrouped> = ({
   data,
   horizontal = false,
   item,
@@ -30,6 +30,6 @@ export const ListGrouped: React.FC<ModelOfListGrouped> = ({
   );
 }
 
-const styles = (theme: ModelOfTheme) => StyleSheet.create({
+const styles = (theme: ITheme) => StyleSheet.create({
   container: { padding: theme.metrics.base, flex: 1 }
 })

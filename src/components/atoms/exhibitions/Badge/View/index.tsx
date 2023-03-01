@@ -1,10 +1,10 @@
-import { ModelOfTheme } from '@poc/theme';
+import { ITheme } from '@poc/interfaces';
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { Texts } from '../../Texts/View';
-import { ModelOfBadge } from '../Models';
+import { IBadge } from '../Models';
 
-export const Badge: React.FC<ModelOfBadge> = ({ value, theme }) => {
+export const Badge: React.FC<IBadge> = ({ value, theme }) => {
 
   if (!value || value === 0) return null;
 
@@ -15,7 +15,7 @@ export const Badge: React.FC<ModelOfBadge> = ({ value, theme }) => {
   );
 }
 
-const styles = (theme: ModelOfTheme) => StyleSheet.create({
+const styles = (theme: ITheme) => StyleSheet.create({
   container: {
     width: 20,
     height: 20,

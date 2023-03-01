@@ -1,10 +1,10 @@
 import React from 'react';
 import { TouchableOpacity, View } from 'react-native';
-import { ModelOfButtonBase, ModelOfButtonFixed, ModelOfButtonLink } from '../Models';
+import { IButtonBase, IButtonFixed, IButtonLink } from '../Models';
 import { Texts } from '../../../../atoms';
 import { styles } from './styles';
 
-const Base: React.FC<ModelOfButtonBase> = ({
+const Base: React.FC<IButtonBase> = ({
   label, onPress,
   isLoading = false, isDisabled = false,
   isOutline = false, style, theme
@@ -22,7 +22,7 @@ const Base: React.FC<ModelOfButtonBase> = ({
   );
 }
 
-const Fixed: React.FC<ModelOfButtonFixed> = ({
+const Fixed: React.FC<IButtonFixed> = ({
   onPress,
   IconSVG,
   theme,
@@ -37,7 +37,7 @@ const Fixed: React.FC<ModelOfButtonFixed> = ({
   );
 }
 
-const Link: React.FC<ModelOfButtonLink> = ({
+const Link: React.FC<IButtonLink> = ({
   label,
   style,
   styleLabel,

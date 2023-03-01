@@ -1,12 +1,12 @@
 import React from 'react';
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import { ModelOfAvatar } from '../Models';
+import { IAvatar } from '../Models';
 import IconAddPhoto from '@src/assetsui/Icons/iconAddPhoto.svg';
 import { Image, View } from 'react-native';
 import imgAvatar from '@src/assetsui/Images/Avatar.jpg';
 import { styles } from './styles';
 
-export const Avatar: React.FC<ModelOfAvatar> = ({
+export const Avatar: React.FC<IAvatar> = ({
   style,
   onPress,
   source,

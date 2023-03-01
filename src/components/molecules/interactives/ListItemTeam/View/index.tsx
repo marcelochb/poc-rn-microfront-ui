@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import { ModelOfListItemTeam } from '../Models';
+import { IListItemTeam } from '../Models';
 import { Avatar, Texts } from '../../../../atoms';
 import { Buttons } from '../../Buttons/View';
 import { styles } from './styles';
@@ -8,7 +8,7 @@ import IconArrowRight from '../../../../../assets/Icons/iconArrowRight.svg'
 import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 
 
-export const ListItemTeam: React.FC<ModelOfListItemTeam> = ({
+export const ListItemTeam: React.FC<IListItemTeam> = ({
   theme,
   avatarSource,
   name,

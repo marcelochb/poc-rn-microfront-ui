@@ -1,8 +1,8 @@
-import { ModelOfTheme } from "@poc/theme";
+import { ITheme } from "@poc/theme";
 import { Component } from "react";
 
-export type ModelOfListItemNotification = {
-  theme: ModelOfTheme,
+export type IListItemNotification = {
+  theme: ITheme,
   onPressed: (() => void) | undefined,
   name: string | undefined;
   lastName: string | undefined;
@@ -11,4 +11,4 @@ export type ModelOfListItemNotification = {
   createdDistance: string | undefined;
 }
 
-export class ListItemNotification extends Component<ModelOfListItemNotification> {}
+export class ListItemNotification extends Component<IListItemNotification> {}

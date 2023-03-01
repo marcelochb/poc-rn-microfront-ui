@@ -2,11 +2,11 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import iconCamera from '@src/assetsui/Icons/iconCamera.svg';
 import iconGalery from '@src/assetsui/Icons/iconGalery.svg';
-import { ModelOfPhotoPopup } from '../Models';
+import { IPhotoPopup } from '../Models';
 import { Popups, Buttons } from '../../../molecules';
-import { ModelOfTheme } from '@poc/theme';
+import { ITheme } from '@poc/interfaces';
 
-export const PhotoPopup: React.FC<ModelOfPhotoPopup> = ({
+export const PhotoPopup: React.FC<IPhotoPopup> = ({
   visible,
   onDismiss,
   onSelectFromGalery,
@@ -33,7 +33,7 @@ export const PhotoPopup: React.FC<ModelOfPhotoPopup> = ({
   );
 }
 
-const styles = (theme: ModelOfTheme) => StyleSheet.create({
+const styles = (theme: ITheme) => StyleSheet.create({
   buttonLink: {
     paddingHorizontal: theme.metrics.large,
     alignItems: 'flex-start',

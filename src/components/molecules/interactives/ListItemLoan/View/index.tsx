@@ -1,13 +1,13 @@
 import React from 'react';
 import { View } from 'react-native';
-import { ModelOfListItemLoan } from '../Models';
+import { IListItemLoan } from '../Models';
 import IconArrowRight from '@src/assetsui/Icons/iconArrowRight.svg';
 import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 import { Texts } from '../../../../atoms';
 import { styles } from './styles';
 
 
-export const ListItemLoan: React.FC<ModelOfListItemLoan> = ({
+export const ListItemLoan: React.FC<IListItemLoan> = ({
   theme,
   onPressed,
   name,

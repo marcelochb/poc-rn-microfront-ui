@@ -1,8 +1,8 @@
-import { ModelOfTheme } from "@poc/theme";
+import { ITheme } from "@poc/theme";
 import { Component } from "react";
 import { ImageSourcePropType, StyleProp, ViewStyle } from "react-native";
 
-export type ModelOfAvatar = {
+export type IAvatar = {
   style?: StyleProp<ViewStyle>;
   onPress?: () => void;
   source?: string;
@@ -10,8 +10,8 @@ export type ModelOfAvatar = {
   small?: boolean;
   error?: boolean | string;
   disable?: boolean;
-  theme: ModelOfTheme;
+  theme: ITheme;
 }
 
 
-export class Avatar extends Component<ModelOfAvatar> {}
+export class Avatar extends Component<IAvatar> {}

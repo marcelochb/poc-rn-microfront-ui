@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
-import { ModelOfTheme } from '@poc/theme';
+import { ITheme } from '@poc/interfaces';
 
-export const styles = (theme: ModelOfTheme) => {
+export const styles = (theme: ITheme) => {
   const { metrics, colors } = theme;
   return StyleSheet.create({
     base: {

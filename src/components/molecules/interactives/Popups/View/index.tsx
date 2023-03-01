@@ -4,14 +4,14 @@ import { View, Modal } from 'react-native';
 import { Buttons } from '../../Buttons/View';
 import { NotificationIcon, Texts } from '../../../../atoms';
 
-import { ModelOfPopupConfirmation, ModelOfPopupNotification, ModelOfPopupOption } from '../Models';
+import { IPopupConfirmation, IPopupNotification, IPopupOption } from '../Models';
 
 import IconClear from '@src/assetsui/Icons/iconClear.svg';
 
 import { styles } from './styles';
 
 
-const Confirmation: React.FC<ModelOfPopupConfirmation> = ({
+const Confirmation: React.FC<IPopupConfirmation> = ({
   theme,
   loading,
   handleButtonPositiveAnswer,
@@ -46,7 +46,7 @@ const Confirmation: React.FC<ModelOfPopupConfirmation> = ({
   );
 }
 
-const Notification: React.FC<ModelOfPopupNotification> = ({
+const Notification: React.FC<IPopupNotification> = ({
   theme,
   visible,
   type,
@@ -76,7 +76,7 @@ const Notification: React.FC<ModelOfPopupNotification> = ({
   );
 }
 
-const Options: React.FC<ModelOfPopupOption> = ({
+const Options: React.FC<IPopupOption> = ({
   visible = false,
   theme,
   onHandler,

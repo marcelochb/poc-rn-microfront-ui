@@ -1,10 +1,10 @@
 import React from 'react';
 import { TouchableWithoutFeedback, View } from 'react-native';
 import { RadioButton, Texts } from '../../../../atoms';
-import { ModelOfSelectButton } from '../Models';
+import { ISelectButton } from '../Models';
 import { styles } from './styles';
 
-export const SelectButton: React.FC<ModelOfSelectButton> = ({
+export const SelectButton: React.FC<ISelectButton> = ({
   theme,
   onClick,
   label,

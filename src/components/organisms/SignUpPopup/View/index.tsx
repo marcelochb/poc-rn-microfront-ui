@@ -1,10 +1,10 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
-import { ModelOfTheme } from '@poc/theme';
-import { ModelOfSignUpPopup } from '../Models';
+import { ITheme } from '@poc/interfaces';
+import { ISignUpPopup } from '../Models';
 import { Buttons, Popups } from '../../../molecules';
 
-export const SignUpPopup: React.FC<ModelOfSignUpPopup> = ({
+export const SignUpPopup: React.FC<ISignUpPopup> = ({
   visible,
   onDismiss,
   theme,
@@ -54,7 +54,7 @@ export const SignUpPopup: React.FC<ModelOfSignUpPopup> = ({
   );
 }
 
-const styles = (theme: ModelOfTheme) => {
+const styles = (theme: ITheme) => {
   const { colors, metrics } = theme;
   return StyleSheet.create({
     buttonLink: {

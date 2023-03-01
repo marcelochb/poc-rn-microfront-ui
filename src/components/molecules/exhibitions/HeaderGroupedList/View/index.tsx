@@ -1,9 +1,9 @@
 import React from 'react';
 import { Texts } from '../../../../atoms';
-import { ModelOfHeaderGroupedList } from '../Models';
+import { IHeaderGroupedList } from '../Models';
 import { styles } from './styles';
 
-export const HeaderGroupedList: React.FC<ModelOfHeaderGroupedList> = ({
+export const HeaderGroupedList: React.FC<IHeaderGroupedList> = ({
   themme,
   yearMonth
 }) => {

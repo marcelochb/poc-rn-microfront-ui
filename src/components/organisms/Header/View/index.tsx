@@ -1,11 +1,11 @@
 import React from 'react';
 import { View } from 'react-native';
-import { ModelOfHeader } from '../Models';
+import { IHeader } from '../Models';
 import { Texts, Avatar } from '../../../atoms';
 import { styles } from './styles';
 
 
-export const Header: React.FC<ModelOfHeader> = ({
+export const Header: React.FC<IHeader> = ({
   theme,
   nickName,
   playerType,

@@ -1,8 +1,8 @@
-import { ModelOfTheme } from "@poc/theme";
+import { ITheme } from "@poc/theme";
 import { Component } from "react";
 
-export type ModelOfAwaitingApproval = {
-  theme: ModelOfTheme;
+export type IAwaitingApproval = {
+  theme: ITheme;
   title: string;
   bodyText: string;
   onPressed: () => void;
@@ -10,4 +10,4 @@ export type ModelOfAwaitingApproval = {
 }
 
 
-export class AwaitingApproval extends Component<ModelOfAwaitingApproval> {}
+export class AwaitingApproval extends Component<IAwaitingApproval> {}

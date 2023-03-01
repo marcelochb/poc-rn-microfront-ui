@@ -1,13 +1,13 @@
 import React from 'react';
 import { Dimensions, View } from 'react-native';
 import { TabView, TabBar } from 'react-native-tab-view';
-import { ModelOfTabBar, ModelOfTabBarView } from '../Models';
+import { ITabBar, ITabBarView } from '../Models';
 import { Badge, Texts } from '../../../atoms';
 import { styles } from './styles';
 
 const initialLayout = { width: Dimensions.get('window').width };
 
-export const TabBarView: React.FC<ModelOfTabBarView> = ({
+export const TabBarView: React.FC<ITabBarView> = ({
   FirstTab,
   firstTabTitle,
   FirstTabBadge,
@@ -23,7 +23,7 @@ export const TabBarView: React.FC<ModelOfTabBarView> = ({
   ]);
 
 
-  const RenderTabBar = (props: ModelOfTabBar) => (
+  const RenderTabBar = (props: ITabBar) => (
     <TabBar
       {...props}
       indicatorStyle={styles(theme).tabIndicator}
