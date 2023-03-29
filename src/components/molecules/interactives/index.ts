@@ -7,3 +7,5 @@ export {ListItemMatch} from './ListItemMatch/View';
 export {ActionSheetWrapper} from './ActionSheetWrapper/View';
 export {SelectButton} from './SelectButton/View';
 export {ListItemLoan} from './ListItemLoan/View';
+export {ListItemPayment} from './ListItemPayment/View';
+export {ListItemPix} from './ListItemPix/View';

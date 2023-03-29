@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "index.ts",
   "types": "index.d.ts",
-  "private": true,
+  "private": false,
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
