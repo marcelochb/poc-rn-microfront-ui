@@ -1,4 +1,4 @@
-import { ITheme } from "@poc/theme";
+import { ITheme } from "@poc/interfaces";
 import React, { Component } from "react";
 
 export interface IActionSheetWrapper {

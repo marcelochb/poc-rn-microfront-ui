@@ -1,5 +1,5 @@
 import { Component, ReactNode } from "react";
-import { ITheme } from "@poc/theme";
+import { ITheme } from "@poc/interfaces";
 
 export type  IPopupNotificationType = 'Sucesso' | 'Atenção' | 'Erro'
 

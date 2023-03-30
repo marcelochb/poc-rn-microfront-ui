@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { TextInputProps } from "react-native";
-import { ITheme } from "@poc/theme";
+import { ITheme } from "@poc/interfaces";
 
 export type IInput = TextInputProps & {
   theme: ITheme;

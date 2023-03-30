@@ -1,4 +1,4 @@
-import { ITheme } from "@poc/theme"
+import { ITheme } from "@poc/interfaces"
 import { Component } from "react";
 
 export type ISelectButton = {

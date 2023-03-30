@@ -20,7 +20,6 @@ export type IButtonBase = {
 
 export type IButtonFixed = {
   theme: ITheme;
-  IconSVG: React.FC<React.SVGProps<SVGSVGElement>>;
   style?: StyleProp<ViewStyle>;
   onPress: ((event: GestureResponderEvent) => void) | undefined;
 };

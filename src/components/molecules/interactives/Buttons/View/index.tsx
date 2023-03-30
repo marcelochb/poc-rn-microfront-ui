@@ -1,6 +1,7 @@
 import React from 'react';
 import { TouchableOpacity, View } from 'react-native';
 import { IButtonBase, IButtonFixed, IButtonLink } from '../Models';
+import IconPlus from '@src/assetsui/Icons/iconPlus.svg';
 import { Texts } from '../../../../atoms';
 import { styles } from './styles';
 
@@ -24,15 +25,12 @@ const Base: React.FC<IButtonBase> = ({
 
 const Fixed: React.FC<IButtonFixed> = ({
   onPress,
-  IconSVG,
   theme,
   style
 }) => {
   return (
-    <TouchableOpacity style={[styles(theme).fixed, style]}
-      onPress={onPress}
-    >
-      {IconSVG && <IconSVG fill={theme.colors.textElements} />}
+    <TouchableOpacity style={[styles(theme).fixed, style]} onPress={onPress}>
+      <IconPlus fill={theme.colors.textElements} />
     </TouchableOpacity>
   );
 }

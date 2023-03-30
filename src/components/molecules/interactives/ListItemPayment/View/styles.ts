@@ -1,10 +1,10 @@
-import { ITheme } from "@poc/theme";
+import { ITheme } from "@poc/interfaces";
 import {StyleSheet} from 'react-native'
 
 export const styles = (theme: ITheme) => StyleSheet.create({
   container: {
     flexDirection: 'row',
-    borderBottomColor: theme.colors.textSecundary,
+    borderBottomColor: theme.colors.elements,
     borderBottomWidth: theme.metrics.borderWidthBase,
     marginBottom: theme.metrics.base,
     paddingBottom: theme.metrics.base
@@ -17,7 +17,12 @@ export const styles = (theme: ITheme) => StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center'
   },
-  recipient: {
+  viewBottom: {
+    flexDirection: 'row',
+    justifyContent: 'space-between'
+  },
+  recipient: {color: theme.colors.elements},
+  dueDate: {
     color: theme.colors.textSecundary,
     fontFamily: theme.fontFamily.italic,
   }

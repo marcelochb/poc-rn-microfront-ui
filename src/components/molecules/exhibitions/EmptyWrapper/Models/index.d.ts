@@ -1,4 +1,4 @@
-import { ITheme } from "@poc/theme"
+import { ITheme } from "@poc/interfaces"
 
 export type IEmptyWrapper = {
   theme: ITheme,

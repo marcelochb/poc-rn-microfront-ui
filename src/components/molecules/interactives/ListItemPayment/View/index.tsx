@@ -18,12 +18,14 @@ export const ListItemPayment: React.FC<IListItemPayment> = ({
   return (
     <TouchableWithoutFeedback style={styles(theme).container} onPress={onPressed}>
       <View style={styles(theme).viewData}>
-        <Texts.Title theme={theme}>{recipient}</Texts.Title>
-        <Texts.Body theme={theme} style={styles(theme).recipient}>{dueDate}</Texts.Body>
-        <Texts.Body theme={theme}>{amount}</Texts.Body>
+        <Texts.Body theme={theme} style={styles(theme).recipient}>{recipient}</Texts.Body>
+        <View style={styles(theme).viewBottom}>
+          <Texts.Body theme={theme} style={styles(theme).dueDate}>{dueDate}</Texts.Body>
+          <Texts.Body theme={theme}>{amount}</Texts.Body>
+        </View>
       </View>
       <View style={styles(theme).viewButton}>
-        <IconArrowRight fill={theme.colors.text} />
+        <IconArrowRight fill={theme.colors.elements} />
       </View>
     </TouchableWithoutFeedback>
   );

@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { ITheme } from "@poc/theme";
+import { ITheme } from "@poc/interfaces";
 
 export type ISignUpPopup = {
   visible: boolean;

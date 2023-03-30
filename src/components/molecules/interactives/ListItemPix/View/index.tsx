@@ -23,7 +23,7 @@ export const ListItemPix: React.FC<IListItemPix> = ({
         <Texts.Body theme={theme}>{amount}</Texts.Body>
       </View>
       <View style={styles(theme).viewButton}>
-        <IconArrowRight fill={theme.colors.text} />
+        <IconArrowRight fill={theme.colors.elements} />
       </View>
     </TouchableWithoutFeedback>
   );

@@ -1,6 +1,6 @@
 import { NavigationState, SceneRendererProps } from "react-native-tab-view";
 import { Component, ReactNode } from "react";
-import { ITheme } from "@poc/theme";
+import { ITheme } from "@poc/interfaces";
 
 type ITabBarViewParameters = {
   navigationState: NavigationState<{ key: string; title: string }>;

@@ -1,4 +1,4 @@
-import { ITheme } from "@poc/theme";
+import { ITheme } from "@poc/interfaces";
 import { Component } from "react";
 import { DefaultSectionT, SectionListData, SectionListRenderItem, StyleProp, ViewStyle } from "react-native";
 
