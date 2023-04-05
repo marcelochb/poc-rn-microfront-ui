@@ -22,8 +22,8 @@ export const RadioButton: React.FC<IRadioButton> = (
   return (
     <WrapperView style={[styles(theme).container, style]} onPress={onClick} disabled={disable}>
       {isChecked
-        ? (<IconRadioButtonChecked fill={'#000'} />)
-        : (<IconRadioButtonUnchecked fill={'#000'} />)
+        ? (<IconRadioButtonChecked fill={theme.colors.elements} />)
+        : (<IconRadioButtonUnchecked fill={theme.colors.elements} />)
       }
       {label && <Texts.Body theme={theme} style={[styles(theme).label, styleLabel]}>{label}</Texts.Body>}
     </WrapperView>
