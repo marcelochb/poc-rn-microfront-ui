@@ -17,8 +17,14 @@ export const styles = (theme: ITheme) => StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center'
   },
-  name: {
-    color: theme.colors.textSecundary,
-    fontFamily: theme.fontFamily.italic,
+  viewRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between'
+  },
+  bank: {
+    fontFamily: theme.fontFamily.italic
+  },
+  elementColor: {
+    color: theme.colors.elements,
   }
 })

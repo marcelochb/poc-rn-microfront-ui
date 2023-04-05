@@ -18,9 +18,14 @@ export const ListItemPix: React.FC<IListItemPix> = ({
   return (
     <TouchableWithoutFeedback style={styles(theme).container} onPress={onPressed}>
       <View style={styles(theme).viewData}>
-        <Texts.Title theme={theme}>{bank}</Texts.Title>
-        <Texts.Body theme={theme} style={styles(theme).name}>{name}</Texts.Body>
-        <Texts.Body theme={theme}>{amount}</Texts.Body>
+        <View style={styles(theme).viewRow}>
+          <Texts.Body theme={theme} style={styles(theme).elementColor}>{name}</Texts.Body>
+          <Texts.Body theme={theme} style={styles(theme).bank}>{bank}</Texts.Body>
+        </View>
+        <View style={styles(theme).viewRow}>
+          <Texts.Body theme={theme}>{date}</Texts.Body>
+          <Texts.Body theme={theme} style={styles(theme).elementColor}>{amount}</Texts.Body>
+        </View>
       </View>
       <View style={styles(theme).viewButton}>
         <IconArrowRight fill={theme.colors.elements} />
