@@ -1,8 +1,8 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { IListItemNotification } from '../Models';
-import IconFootball from '@src/assetsui/Icons/iconFootball.svg';
-import IconArrowRight from '@src/assetsui/Icons/iconArrowRight.svg';
+import IconFootball from '../../../../../assets/Icons/iconFootball.svg';
+import IconArrowRight from '../../../../../assets/Icons/iconArrowRight.svg';
 import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 import { Texts } from '../../../../atoms';
 import { ITheme } from '@poc/interfaces';

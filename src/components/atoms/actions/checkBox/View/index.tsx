@@ -2,10 +2,8 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 import { ICheckBox } from '../Models';
-import IconCheckBox from '@src/assetsui/Icons/iconCheckBox.svg';
-import IconCheckBoxOutlineBlank from '@src/assetsui/Icons/iconCheckBoxOutlineBlank.svg';
-import IconRadioButtonChecked from '@src/assetsui/Icons/iconRadioButtonChecked.svg';
-import IconRadioButtonUnchecked from '@src/assetsui/Icons/iconRadioButtonUnchecked.svg';
+import IconCheckBox from '../../../../../assets/Icons/iconCheckBox.svg';
+import IconCheckBoxOutlineBlank from '../../../../../assets/Icons/iconCheckBoxOutlineBlank.svg';
 import { ITheme } from '@poc/interfaces';
 import { Texts } from '../../../exhibitions';
 

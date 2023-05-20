@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import { IListItemPayment } from '../Models';
-import IconArrowRight from '@src/assetsui/Icons/iconArrowRight.svg';
+import IconArrowRight from '../../../../../assets/Icons/iconArrowRight.svg';
 import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 import { Texts } from '../../../../atoms';
 import { styles } from './styles';

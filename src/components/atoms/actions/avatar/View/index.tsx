@@ -1,9 +1,9 @@
 import React from 'react';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { IAvatar } from '../Models';
-import IconAddPhoto from '@src/assetsui/Icons/iconAddPhoto.svg';
+import IconAddPhoto from '../../../../../assets/Icons/iconAddPhoto.svg';
 import { Image, View } from 'react-native';
-import imgAvatar from '@src/assetsui/Images/Avatar.jpg';
+import imgAvatar from '../../../../../assets/Images/Avatar.jpg';
 import { styles } from './styles';
 
 export const Avatar: React.FC<IAvatar> = ({

@@ -2,8 +2,8 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 import { IRadioButton } from '../Models';
-import IconRadioButtonChecked from '@src/assetsui/Icons/iconRadioButtonChecked.svg';
-import IconRadioButtonUnchecked from '@src/assetsui/Icons/iconRadioButtonUnchecked.svg';
+import IconRadioButtonChecked from '../../../../../assets/Icons/iconRadioButtonChecked.svg';
+import IconRadioButtonUnchecked from '../../../../../assets/Icons/iconRadioButtonUnchecked.svg';
 import { ITheme } from '@poc/interfaces';
 import { Texts } from '../../../exhibitions';
 

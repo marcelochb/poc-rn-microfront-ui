@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
-import iconCamera from '@src/assetsui/Icons/iconCamera.svg';
-import iconGalery from '@src/assetsui/Icons/iconGalery.svg';
+import iconCamera from '../../../../assets/Icons/iconCamera.svg';
+import iconGalery from '../../../../assets/Icons/iconGalery.svg';
 import { IPhotoPopup } from '../Models';
 import { Popups, Buttons } from '../../../molecules';
 import { ITheme } from '@poc/interfaces';

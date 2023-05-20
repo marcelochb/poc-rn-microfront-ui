@@ -1,7 +1,7 @@
 import React from 'react';
 import { TouchableOpacity, View } from 'react-native';
 import { IButtonBase, IButtonFixed, IButtonLink } from '../Models';
-import IconPlus from '@src/assetsui/Icons/iconPlus.svg';
+import IconPlus from '../../../../../assets/Icons/iconPlus.svg';
 import { Texts } from '../../../../atoms';
 import { styles } from './styles';
 

@@ -6,7 +6,7 @@ import { NotificationIcon, Texts } from '../../../../atoms';
 
 import { IPopupConfirmation, IPopupNotification, IPopupOption } from '../Models';
 
-import IconClear from '@src/assetsui/Icons/iconClear.svg';
+import IconClear from '../../../../../assets/Icons/iconClear.svg';
 
 import { styles } from './styles';
 

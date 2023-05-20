@@ -2,9 +2,9 @@ import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { INotificationIcon } from '../Models';
 
-import IconCheckCicle from '@src/assetsui/Icons/iconCheckCircle.svg';
-import IconWarning from '@src/assetsui/Icons/iconWarning.svg';
-import IconDangerous from '@src/assetsui/Icons/iconDangerous.svg';
+import IconCheckCicle from '../../../../../assets/Icons/iconCheckCircle.svg';
+import IconWarning from '../../../../../assets/Icons/iconWarning.svg';
+import IconDangerous from '../../../../../assets/Icons/iconDangerous.svg';
 import { ITheme } from '@poc/interfaces';
 
 export const NotificationIcon: React.FC<INotificationIcon> = ({ type, theme }) => {
