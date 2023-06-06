@@ -1,4 +1,4 @@
-import { ITheme } from '@poc/interfaces';
+import { ITheme } from '../../../../../../../interfaces/src/themes';
 import React from 'react';
 import { View, FlatList, StyleSheet } from 'react-native';
 import { IList } from '../Models';

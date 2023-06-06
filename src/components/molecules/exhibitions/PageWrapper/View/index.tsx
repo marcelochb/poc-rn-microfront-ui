@@ -1,9 +1,11 @@
 import React from 'react';
 import {View, StyleSheet, ActivityIndicator, SafeAreaView} from 'react-native';
 import {IPageWapper} from '../Models';
-import {ITheme} from '@poc/interfaces';
+import {ITheme} from '../../../../../../../interfaces/src/themes';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
-import {StatusBarPageWrapper, StatusBarPage, Texts} from '../../../../atoms';
+import { StatusBarPageWrapper } from '../../../../atoms/containers/StatusBarPageWrapper/View';
+import { StatusBarPage } from '../../../../atoms/exhibitions/StatusBarPage/View';
+import { Texts } from '../../../../atoms/exhibitions/Texts/View';
 
 export const PageWrapper: React.FC<IPageWapper> = ({
   children,

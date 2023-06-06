@@ -2,8 +2,8 @@ import React from 'react';
 import { TouchableOpacity, View } from 'react-native';
 import { IButtonBase, IButtonFixed, IButtonLink } from '../Models';
 import IconPlus from '../../../../../assets/Icons/iconPlus.svg';
-import { Texts } from '../../../../atoms';
 import { styles } from './styles';
+import { Texts } from '../../../../atoms/exhibitions/Texts/View';
 
 const Base: React.FC<IButtonBase> = ({
   label, onPress,

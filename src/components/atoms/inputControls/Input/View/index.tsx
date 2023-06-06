@@ -1,12 +1,11 @@
 import React from 'react';
-import { View, TextInput, Animated, Text, StyleSheet } from 'react-native';
+import { View, TextInput, Animated, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { IInput } from '../Models';
 import { useInputController } from '../Controller';
 
 import IconPasswordOff from '../../../../../assets/Icons/iconPasswordOff.svg';
 import IconPasswordOn from '../../../../../assets/Icons/iconPasswordOn.svg';
-import { TouchableOpacity } from 'react-native-gesture-handler';
-import { ITheme } from '@poc/interfaces';
+import { ITheme } from '../../../../../../../interfaces/src/themes';
 import { Texts } from '../../../exhibitions';
 
 export const Input: React.FC<IInput> = ({

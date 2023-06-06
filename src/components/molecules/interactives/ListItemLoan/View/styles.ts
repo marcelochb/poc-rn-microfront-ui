@@ -1,4 +1,4 @@
-import { ITheme } from "@poc/interfaces";
+import { ITheme } from "../../../../../../../interfaces/src/themes";
 import {StyleSheet} from 'react-native'
 
 export const styles = (theme: ITheme) => StyleSheet.create({

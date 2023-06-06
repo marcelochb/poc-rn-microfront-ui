@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, SafeAreaView } from 'react-native';
 import { IStatusBarPageWrapper } from '../Models';
-import { ITheme } from '@poc/interfaces';
+import { ITheme } from '../../../../../../../interfaces/src/themes';
 
 
 export const StatusBarPageWrapper: React.FC<IStatusBarPageWrapper> = ({

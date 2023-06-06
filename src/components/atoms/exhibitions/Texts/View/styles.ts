@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { ITheme } from '@poc/interfaces';
+import { ITheme } from '../../../../../../../interfaces/src/themes';
 
 export const styles = (theme: ITheme, isTextElement: boolean = false) => {
   const { fontFamily, fontSize, colors } = theme;
