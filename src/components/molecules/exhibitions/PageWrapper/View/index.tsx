@@ -6,6 +6,7 @@ import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 import { StatusBarPageWrapper } from '../../../../atoms/containers/StatusBarPageWrapper/View';
 import { StatusBarPage } from '../../../../atoms/exhibitions/StatusBarPage/View';
 import { Texts } from '../../../../atoms/exhibitions/Texts/View';
+import { Buttons } from '../../../interactives';
 
 export const PageWrapper: React.FC<IPageWapper> = ({
   children,
@@ -20,7 +21,8 @@ export const PageWrapper: React.FC<IPageWapper> = ({
   actionSheet,
   hideButtonFixed = false,
   error = false,
-  errorText = 'Tivemos um problema de comunicação'
+  errorText = 'Tivemos um problema de comunicação',
+  errorCallBack
 }) => {
   if (loading) {
     return (
@@ -45,7 +47,12 @@ export const PageWrapper: React.FC<IPageWapper> = ({
         />
         <View style={[styles(theme).container, styles(theme).centerChilds]}>
           <StatusBarPage theme={theme} isStatusBarLight={isStatusBarLight} />
-          <Texts.Body theme={theme}>{errorText}</Texts.Body>
+          <Texts.Body theme={theme} style={styles(theme).error}>{errorText}</Texts.Body>
+          {errorCallBack && <Buttons.Link
+            theme={theme}
+            label='Voltar'
+            onPress={errorCallBack}
+          /> }
         </View>
       </>
     );
@@ -128,5 +135,6 @@ const styles = (theme: ITheme) => {
     },
     scrollView: {backgroundColor: colors.background, flex: 1},
     centerChilds: {justifyContent: 'center', alignItems: 'center'},
+    error: {textAlign: 'center'}
   });
 };

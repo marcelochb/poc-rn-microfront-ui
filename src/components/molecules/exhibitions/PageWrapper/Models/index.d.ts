@@ -11,6 +11,7 @@ export type IPageWapper = {
   loading?: boolean;
   error?: boolean;
   errorText?: string;
+  errorCallBack?: () => void;
   noHorizontalPadding?: boolean;
   theme: ITheme;
   children: ReactNode;
