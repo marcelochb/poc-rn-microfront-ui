@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
+import { StyleSheet, View, TouchableOpacity, TouchableWithoutFeedback } from 'react-native';
+// import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 import { IRadioButton } from '../Models';
 import IconRadioButtonChecked from '../../../../../assets/Icons/iconRadioButtonChecked.svg';
 import IconRadioButtonUnchecked from '../../../../../assets/Icons/iconRadioButtonUnchecked.svg';
@@ -20,13 +20,15 @@ export const RadioButton: React.FC<IRadioButton> = (
 ) => {
   const WrapperView = onClick ? TouchableWithoutFeedback : View;
   return (
-    <WrapperView style={[styles(theme).container, style]} onPress={onClick} disabled={disable}>
+    <TouchableWithoutFeedback  onPress={onClick} disabled={disable}>
+      <View style={[styles(theme).container, style]}>
       {isChecked
         ? (<IconRadioButtonChecked fill={theme.colors.elements} />)
         : (<IconRadioButtonUnchecked fill={theme.colors.elements} />)
       }
       {label && <Texts.Body theme={theme} style={[styles(theme).label, styleLabel]}>{label}</Texts.Body>}
-    </WrapperView>
+      </View>
+    </TouchableWithoutFeedback>
   );
 }
 const styles = (theme: ITheme) => StyleSheet.create({

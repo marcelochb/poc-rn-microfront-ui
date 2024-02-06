@@ -29,7 +29,7 @@ const Fixed: React.FC<IButtonFixed> = ({
   style
 }) => {
   return (
-    <TouchableOpacity style={[styles(theme).fixed, style]} onPress={onPress}>
+    <TouchableOpacity style={[styles(theme).fixed, style]} onPressIn={onPress}>
       <IconPlus fill={theme.colors.textElements} />
     </TouchableOpacity>
   );
@@ -47,7 +47,7 @@ const Link: React.FC<IButtonLink> = ({
 }) => {
   const colorIcon = IconColor ?? theme.colors.textSecundary;
   return (
-    <TouchableOpacity style={[styles(theme).link, styleContent]} onPress={onPress} >
+    <TouchableOpacity style={[styles(theme).link, styleContent]} onPressIn={onPress} >
       <View style={[styles(theme).content, IconSVG ? styles(theme).viewSVG : {},style]}>
         {label && <Texts.Link theme={theme} style={styleLabel}>{label}</Texts.Link>}
         {IconSVG && <IconSVG fill={colorIcon} />}
